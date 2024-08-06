@@ -1,0 +1,39 @@
+.boxWidth {
+  width: 500px;
+  align-items: center !important;
+}
+
+.divCol1 {
+  width: 30%;
+  margin: 5px;
+  padding: 5px;
+}
+.divCol2 {
+  width: 60%;
+  margin: 5px;
+  padding: 5px;
+  margin-top: 90px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+}
+
+.widthBtn {
+  width: 150px;
+}
+
+.padR5 {
+  padding-right: 5px;
+}
+.title {
+  margin: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.alignRight {
+  margin-left: auto;
+  padding-right: 30px;
+}
