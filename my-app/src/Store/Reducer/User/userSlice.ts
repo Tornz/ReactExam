@@ -22,7 +22,7 @@ const userSlice = createSlice({
     login: (state, action: PayloadAction<{ username: string; password: string; branchId: string }>) => {
       const exist = state.userList.find(student => student.userName === action.payload.username
         && student.password === action.payload.password && student.branchId === Number(action.payload.branchId))
-      debugger
+
       if (exist) {
         state.isAuthenticated = true;
         state.currentUser = exist;
@@ -35,13 +35,11 @@ const userSlice = createSlice({
 
     },
     addUser: (state, action) => {
-      debugger
       let nUsers: UserModel[] = [...state.userList]
       nUsers.push(action.payload)
       state.userList = [...nUsers];
     },
     removeUser: (state, action) => {
-      debugger
       let nUsers: UserModel[] = [...state.userList]
       state.userList = [...nUsers.filter(user => user.branchId !== action.payload)];
     },
